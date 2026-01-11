@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/AliensVsHumans.iml" filepath="$PROJECT_DIR$/AliensVsHumans.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JUnit Testing/JUnit Testing.iml" filepath="$PROJECT_DIR$/JUnit Testing/JUnit Testing.iml" />
     </modules>
   </component>
 </project>
