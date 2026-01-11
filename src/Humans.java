@@ -1,14 +1,17 @@
-public class Humans extends Entity{
+public class Humans extends Entities {
 
-    private String name;
     private int sword;
     private int magic;
 
-    public Humans(int damage, int skills, int health, int armour, String name, int sword, int magic) {
-        super(damage, skills, health, armour);
+
+
+    public Humans(String name, int damage, int skills, int health, int sword, int magic) {
+        super(name, damage, skills, health);
         this.name = name;
         this.sword = sword;
         this.magic = magic;
+        this.skills = skills;
     }
+
 }
 
