@@ -4,19 +4,29 @@ import static org.junit.Assert.assertEquals;
 
 public class TestHumans {
 
-    private  int a = 100;
-    private  int b = 50;
-    private  int c = 24;
-
-    Humans h = new Humans();
+    Humans h = new Humans ( "John", 100, 100,50,50);
 
     @Test
 
-    public void testHuman () {
+    public void testHumanConstructor () {
 
-        assertEquals(0, h.health(a));
-        assertEquals(50, h.health(b));
-        assertEquals(75, h.health(c));
 
+
+            assertEquals("John", h.getName());
+            assertEquals(100, h.getDamage());
+            assertEquals(100, h.getHealth());
+            assertEquals(50, h.getSword());
+            assertEquals(50, h.getMagic());
+        }
+
+        @Test
+
+    public void testGetDamage (){
+
+        assertEquals(100, h.getDamage());
+
+
+        }
     }
-}
+
+

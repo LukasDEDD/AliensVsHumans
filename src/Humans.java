@@ -9,32 +9,21 @@ public class Humans extends Entities {
         this.magic = magic;
     }
 
-    public Humans() {
-        super("Default", 0, 100);
-        this.sword = 0;
-        this.magic = 0;
+    public int getMagic() {
+        return magic;
+    }
+
+    public int getSword() {
+        return sword;
     }
 
     @Override
     public int getDamage() {
         return sword + magic;
+        }
+
     }
 
-
-    public int health(int damage) {
-
-        if (damage == 100)
-            return 0;
-        else if (damage < 100 && damage > 25 ) {
-            return 50;
-        } else if (damage <= 25) {
-            return 75;
-        }
-        else {
-            throw new IllegalArgumentException("Unsupported damage: " + damage);
-        }
-    }
-}
 
 
 

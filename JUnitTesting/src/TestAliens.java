@@ -4,19 +4,23 @@ import static org.junit.Assert.assertEquals;
 
 public class TestAliens {
 
-    private  int a = 100;
-    private  int b = 50;
-    private  int c = 24;
+    Aliens a = new Aliens("CX 700", 100, 100, 50, 50);
+    @Test
 
-    Aliens al = new Aliens();
+    public void TestAliensConstructor() {
+
+
+        assertEquals("CX 700", a.getName());
+        assertEquals(100, a.getDamage());
+        assertEquals(100, a.getHealth());
+        assertEquals(50, a.getPoison());
+        assertEquals(50, a.getBite());
+
+    }
 
     @Test
 
-    public void TestAliens () {
-
-        assertEquals(0, al.health(a));
-        assertEquals(70, al.health(b));
-        assertEquals(80, al.health(c));
-
+    public void testGetDamage() {
+        assertEquals(100, a.getDamage());
     }
 }
