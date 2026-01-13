@@ -12,8 +12,8 @@ public class Entities {
 
     }
 
-    public void takeDamage(int damage) {
-        this.health = Math.max(0, this.health - damage);
+    public void takeDamage(Entities attacker) {
+        this.health = Math.max(0, this.health - attacker.getDamage());
     }
 
     public int getHealth() {
