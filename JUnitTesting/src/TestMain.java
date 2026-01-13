@@ -14,6 +14,5 @@ public class TestMain {
         Main.battle(a,b);
             assertEquals(20, a.getHealth());
             assertEquals(0, b.getHealth());
-
         }
     }

@@ -26,7 +26,6 @@ public class Humans extends Entities {
     public void takeDamage(Entities attacker) {
         this.health = Math.max(0, this.health - attacker.getDamage());
         }
-
     }
 
 

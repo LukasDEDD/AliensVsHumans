@@ -24,7 +24,6 @@ public class TestHumans {
     public void testGetDamage (){
 
         assertEquals(100, h.getDamage());
-
         }
     }
 
